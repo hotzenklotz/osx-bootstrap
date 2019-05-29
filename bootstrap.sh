@@ -65,13 +65,11 @@ PACKAGES=(
     node
     npm
     nvm
-    osxfuse
     postgresql
     python
     python3
     rename
     ssh-copy-id
-    sshfs
     tmux
     tree
     watch
@@ -126,7 +124,7 @@ echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
 
 echo "Installing fonts..."
-brew tap caskroom-fonts
+brew tap homebrew/cask-fonts
 FONTS=(
     font-open-sans
     font-montserrat
