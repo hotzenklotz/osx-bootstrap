@@ -52,7 +52,6 @@ PACKAGES=(
     awscli
     cmake
     colordiff
-    docker
     ffmpeg
     findutils
     flow
@@ -94,10 +93,11 @@ CASKS=(
     cncjs
     cyberduck
     dropbox
+    docker
     firefox
     gifox
     gimp
-    github-desktop
+    github
     google-backup-and-sync
     google-chrome
     iterm2
@@ -137,7 +137,7 @@ brew cask install ${FONTS[@]}
 echo "Configuring OSX..."
 
 # Set fast key repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 2
 
 # Require password as soon as screensaver or sleep mode starts
 defaults write com.apple.screensaver askForPassword -int 1
