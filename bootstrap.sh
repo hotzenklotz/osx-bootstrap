@@ -40,7 +40,7 @@ brew install gnu-sed
 brew install gnu-tar
 brew install gnu-indent
 brew install gnu-which
-brew install gnu-grep
+brew install grep
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, g-prefixed
 brew install findutils
@@ -52,9 +52,7 @@ PACKAGES=(
     awscli
     cmake
     colordiff
-    coreutils
     docker
-    ffmpeg
     ffmpeg
     findutils
     flow
@@ -64,12 +62,10 @@ PACKAGES=(
     hdf5
     jq
     libjpeg
-    libmemcached
-    nmap
     node
     npm
-    numpy
     nvm
+    osxfuse
     postgresql
     python
     python3
@@ -101,12 +97,6 @@ CASKS=(
     cyberduck
     dropbox
     firefox
-    font-montserrat
-    font-pacifico
-    font-raleway
-    font-roboto
-    font-roboto-mono
-    fusion360
     gifox
     gimp
     github-desktop
@@ -141,7 +131,6 @@ FONTS=(
     font-open-sans
     font-montserrat
     font-raleway
-    font-inconsolidata
     font-roboto
     font-clear-sans
     font-source-code-pro
@@ -185,6 +174,8 @@ defaults write com.apple.dock tilesize -int 36
 
 # Pin dock to right side of screen
 defaults write com.apple.Dock orientation -string "right"
+
+
 
 killall Dock > /dev/null 2>&1
 killall Finder > /dev/null 2>&1
