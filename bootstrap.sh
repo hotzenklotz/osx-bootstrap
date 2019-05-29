@@ -65,7 +65,6 @@ PACKAGES=(
     jq
     libjpeg
     libmemcached
-    ngrok
     nmap
     node
     npm
@@ -90,9 +89,6 @@ brew install ${PACKAGES[@]}
 
 echo "Cleaning up..."
 brew cleanup
-
-echo "Installing cask..."
-brew install caskroom/cask/brew-cask
 
 CASKS=(
     1password
@@ -140,7 +136,7 @@ echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
 
 echo "Installing fonts..."
-brew tap caskroom/fonts
+brew tap caskroom-fonts
 FONTS=(
     font-open-sans
     font-montserrat
@@ -151,14 +147,6 @@ FONTS=(
     font-source-code-pro
 )
 brew cask install ${FONTS[@]}
-
-echo "Installing Python packages..."
-PYTHON_PACKAGES=(
-    ipython
-    virtualenv
-    virtualenvwrapper
-)
-sudo pip install ${PYTHON_PACKAGES[@]}
 
 echo "Configuring OSX..."
 
