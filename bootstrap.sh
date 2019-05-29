@@ -124,7 +124,6 @@ echo "Installing cask apps..."
 brew cask install ${CASKS[@]}
 
 echo "Installing fonts..."
-brew tap homebrew/cask-fonts
 FONTS=(
     font-open-sans
     font-montserrat
